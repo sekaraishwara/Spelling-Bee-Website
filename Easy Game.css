@@ -1,0 +1,117 @@
+body {
+    background-image: linear-gradient(yellow,limegreen,aqua, yellow);
+  }
+  
+  .choice-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    background:white;
+    font-size: 3rem;
+    min-width: 80rem;
+  }
+  
+  .choice-container:hover {
+    cursor: pointer;
+    box-shadow: yellow;
+    transform: scale(1.02);
+    transform: transform 100ms;
+  }
+  
+  .choice-prefix {
+    padding: 2rem 2.5rem;
+    color:black;
+  }
+  .choice-text {
+    text-align: left;
+    padding: 2rem;
+    width: 100%;
+  }
+  
+  .correct {
+    background: lime;
+  }
+  .incorrect {
+    background: red;
+  }
+  
+  /* Heads up Display */
+  #hud {
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  
+  .hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+  
+  }
+  
+  .hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+  }
+  
+  .hud-main-text {
+    text-align: center;
+  }
+  
+  .playButton {
+    text-align: center;
+  }
+  
+  #question {
+    text-align: center;
+  }
+  
+  .playWord {
+    background: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px 15px;
+    height: fit-content;
+    width: 400px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    border-radius: 6px;
+    border: (yellow, lime, aqua, yellow);
+  }
+  
+  .playWord:hover {
+    cursor: pointer;
+    box-shadow: black;
+    transition: transfore 150ms;
+    transform: scale(1.03);
+  }
+  
+  .game-question-container{
+    width: 80%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 25px;
+  }
+  
+  .game-question-container button{
+    width: 45%;
+    height: 3rem;
+    border: 2px solid black;
+    border-radius: 20px;
+  }
+  
+  .fa-play-circle {
+    font-size: 30px;
+    margin-left: 5px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .choice-container {
+      min-width: 40rem;
+    }
+  }
